@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read -p "Integer1 " int1
+read -p "Integer2 " int2
+echo "-------------------------------------------------------------------------------"
+printf "Menu:\n(a)Addition\n (b)Subtraction\n (c)Multiplication\n (d)Division\n"
+echo "-------------------------------------------------------------------------------"
+read -p "your choice: " choice
+ai=0
+
+case $choice in
+             a) ai=$(( int1 + int2 ));;
+             b) ai=$(( int1 - int2 ));;
+             c) ai=$(( int1 * int2 ));;
+             d) ai=$(( int1 / int2 ));;
+  *)
+ echo "Invalid Input"
+esac
+echo "the result is : "$ai
