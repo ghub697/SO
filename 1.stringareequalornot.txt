@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Enter String 1"
+read username
+echo "Enter String 2"
+read password
+
+if [[( $username == $password)]]
+then
+echo "string are equal"
+else
+echo "String are not equal"
+fi
