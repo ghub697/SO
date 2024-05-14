@@ -1,0 +1,13 @@
+echo "enter any file name"
+read f1
+if [ -e $f1 ]
+then 
+    echo "file exists"
+    echo "before changing permission"
+    ls -1 $f1
+    chmod ugo+rwx $f1
+    echo "Afer changing permission"
+    ls -1 $f1
+else
+   echo "files does not exist"
+fi
